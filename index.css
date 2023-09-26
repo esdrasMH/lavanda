@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-23deg, #5e54c6 50%, #fff 50%);
+}
+
+.main {
+    height: 580px;
+    width: 380px;
+}
+
+.screen {
+    height: 180px;
+    width: inherit;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #282929;
+}
+
+.circles {
+    display: flex;
+    justify-content: start;
+    padding: 12px;
+}
+
+.redCircle,
+.yellowCircle,
+.greenCircle {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.redCircle {
+    background-color: #F9615E;
+}
+
+.yellowCircle {
+    background-color: #FCBA46;
+}
+
+.greenCircle {
+    background-color: #44C74F;
+}
+
+.operations,
+.result {
+    text-align: right;
+    padding-right: 35px;
+}
+
+.operations {
+    color: #9fa09c;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.result {
+    color: white;
+    font-size: 44px;
+}
+
+p {
+    margin: 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    height: 400px;
+    width: inherit;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #282929;
+}
+
+.keyboard::before {
+    content: '';
+    position: absolute;
+    height: 380px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -24%);
+    -webkit-box-shadow: 20px 20px 80px 0px rgba(59, 59, 59, 1);
+    -moz-box-shadow: 20px 20px 80px 0px rgba(59, 59, 59, 1);
+    box-shadow: 20px 20px 80px 0px rgba(59, 59, 59, 1);
+    z-index: -1;
+}
+
+.keyboard button {
+    font-size: 24px;
+    background-color: #3B3B3B;
+    color: #d9d8de;
+    border: none;
+    cursor: pointer;
+}
+
+.keyboard button:hover {
+    opacity: 0.75;
+}
+
+.keyboard button:focus {
+    opacity: 0.45;
+}
+
+.keyboard button:nth-child(-n+3) {
+    color: #9fa09c;
+}
+
+.keyboard button:nth-child(4n) {
+    background-color: #544aa9;
+    color: #FAFAFB;
+}
+
+.keyboard button:last-child {
+    background-color: #feaf38;
+    -webkit-box-shadow: 20px 20px 80px 0px rgba(254, 175, 56, 1);
+    -moz-box-shadow: 20px 20px 80px 0px rgba(254, 175, 56, 1);
+    box-shadow: 20px 20px 80px 0px rgba(254, 175, 56, 1);
+}

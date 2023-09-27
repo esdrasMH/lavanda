@@ -126,3 +126,25 @@ p {
     -moz-box-shadow: 20px 20px 80px 0px rgba(254, 175, 56, 1);
     box-shadow: 20px 20px 80px 0px rgba(254, 175, 56, 1);
 }
+
+@media screen and (max-width: 990px) {
+    .main {
+        height: 100vh;
+        max-height: 580px;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .screen,
+    .keyboard {
+        border-radius: 0;
+    }
+
+    .keyboard::before {
+        display: none;
+    }
+
+    .keyboard button:last-child {
+        box-shadow: none;
+    }
+}
